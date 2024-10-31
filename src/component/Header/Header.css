@@ -1,0 +1,57 @@
+
+
+nav a{
+    margin: 50px;
+}
+.user{
+    border: 2px solid purple;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.users{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+nav a.active{
+    color: white;
+    padding: 14px 20px;
+    border-radius: 15px;
+    background: black;
+}
+
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
